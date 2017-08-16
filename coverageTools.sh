@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 echo "Installing go coverage tools..."
 go get -u -v github.com/axw/gocov/gocov
