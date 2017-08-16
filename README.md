@@ -2,7 +2,8 @@
 
 Docker image for Jenkins pipeline golang build. It includes the following:
 
-* Source Image: **golang:1.8-alpine**
+* Source Image:
+  * ```golang:1.8-alpine``` (https://hub.docker.com/_/golang/)
 * Cobertura Coverage Tools:
   * [gocov](https://github.com/axw/gocov)
   * [gocov-xml](https://github.com/t-yuki/gocov-xml)
