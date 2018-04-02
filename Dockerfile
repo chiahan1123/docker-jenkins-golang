@@ -5,7 +5,7 @@ RUN apk update && apk upgrade && \
     apk add --no-cache bash git openssh && \
     rm -rf /var/cache/apk/*
 
-COPY coverageTools.sh /coverageTools.sh
-RUN /coverageTools.sh && \
-    rm /coverageTools.sh
-
+RUN go get -u -v github.com/axw/gocov/gocov && \
+    go get -u -v github.com/t-yuki/gocov-xml && \
+    go get -u -v gopkg.in/matm/v1/gocov-html && \
+    rm -rf $GOPATH/src/*  # since only need the binary
